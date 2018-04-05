@@ -1,5 +1,6 @@
 #!/bin/bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SQLFILE="/tmp/.file3984.sql"
 DATABASE="ammeter"
 USERDB="ammeter"
@@ -10,6 +11,6 @@ if [ -f $SQLFILE ]; then
 fi
 
 # Generate the input file in SQL Format
-./get_data.sh > $SQLFILE
+$DIR/get_data.sh > $SQLFILE
 
 $MYSQL < $SQLFILE
