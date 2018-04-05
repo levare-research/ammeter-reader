@@ -3,7 +3,7 @@
 SQLFILE="./.file.sql"
 DATABASE="ammeter"
 USERDB="ammeter"
-MYSQL="/usr/bin/mysql -u $USERDB -p $DATABASE "
+MYSQL="/usr/bin/mysql -u $USERDB $DATABASE "
 
 if [ -f $SQLFILE ]; then
     rm -f $SQLFILE
