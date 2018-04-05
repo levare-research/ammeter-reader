@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SQLFILE="./.file.sql"
+SQLFILE="/tmp/.file3984.sql"
 DATABASE="ammeter"
 USERDB="ammeter"
 MYSQL="/usr/bin/mysql -u $USERDB $DATABASE "
